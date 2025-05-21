@@ -1,0 +1,89 @@
+
+.title-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: flex-end;
+    mix-blend-mode: difference;
+    
+}
+
+.title-content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.slider{
+    position: relative;
+    white-space: nowrap;
+    will-change: transform; /* Added for optimization */
+}
+
+.slider p{
+  z-index: 10;
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-size: var(--display);
+    padding-right: 50px;
+}
+
+.slider p:nth-of-type(2){
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
+.line-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+.line {
+    width: 90vw; /* Adjust the width as needed */
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.411); /* Adjust the color as needed */
+}
+
+.line-desc {
+    font-size: var(--fs-s);
+    color: #ffffff;
+  }
+
+
+
+  /* For tablets and smaller screens */
+@media (max-width: 768px) {
+  
+    .line {
+      width: 90vw; /* Adjust the width as needed */
+      height: 1.5px; /* Adjust the height as needed */
+    }
+  
+   
+  }
+  
+  /* For mobile phones and smaller screens */
+  @media (max-width: 480px) {
+    .line {
+      width: 100vw; /* Adjust the width as needed */
+      height: 1px; /* Adjust the height as needed */
+    }
+
+    .line-desc {
+        width: 20%;
+        text-align: center;
+      }
+  
+  }
+

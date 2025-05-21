@@ -1,0 +1,75 @@
+.main-container {
+    height:100vh;
+    font-family: Avant Garde Book BT;
+    width: 100%;
+    position: relative;
+}
+
+
+.mask-container, .body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #afa18f;
+  font-size: var(--fs-xl);
+  line-height: 1.2;
+  cursor: default;
+}
+
+.mask-container p {
+  width: 60%;
+  padding: 40px;
+}
+
+.body-container p {
+    width: 60%;
+    padding: 40px;
+  }
+.mask-container span {
+  color: #ec4e39;
+}
+
+.mask-container {
+  mask-image: url('../../assets/mask.svg'); /* Corrected path */
+  mask-repeat: no-repeat;
+  background: #ec4e39;
+  position: absolute;
+  color: black;
+  -webkit-mask-image: url('../../../assets/mask.svg'); /* Added for cross-browser compatibility */
+  -webkit-mask-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .mask-container, .body-container {
+      color: white;
+      text-align: center;
+      line-height: 1;
+  }
+
+  .mask-container {
+      display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mask-container, .body-container {
+      flex-direction: column;
+  }
+
+  .mask-container p, .body-container p {
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+
+
+  .mask-container p, .body-container p {
+      width: 90%;
+      padding: 10px;
+  }
+}

@@ -1,0 +1,65 @@
+/* Container Styles */
+.section3-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: hidden;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+/* Content Styles */
+.section3-content {
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  mix-blend-mode: difference;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section3-text-small {
+  width: 50vw;
+  font-size: var(--fs-l);
+  font-family: 'Cormorant Garamond', serif;
+
+  align-self: flex-start;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+.section3-text-large {
+  align-self: flex-end;
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: var(--fs-xxl);
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+/* Background Image Wrapper */
+.section3-background-wrapper {
+  position: fixed;
+  top: -10vh;
+  left: 0;
+  height: 120vh;
+  width: 100%;
+}
+
+/* Motion Div Styles */
+.section3-motion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section3-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

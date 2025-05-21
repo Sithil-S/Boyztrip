@@ -1,0 +1,16 @@
+.opacity-reveal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.opacity-reveal-word {
+    position: relative;
+    margin-left: 0.2em; /* Adjusted spacing */
+}
+
+.opacity-reveal-word .overlay {
+    position: absolute;
+    opacity: 0.2;
+}
+

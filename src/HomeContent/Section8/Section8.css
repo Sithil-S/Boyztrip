@@ -1,0 +1,123 @@
+/* filepath: e:\Projects\Boyztrip\boyztrip\src\HomeContent\Section8\Section8.css */
+.section8-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  will-change: transform;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor: none; /* Hide default cursor for better effect */
+}
+
+.mask-outer-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Ensure mask stays within container */
+}
+
+.mask-container, .body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  cursor: none; /* Hide default cursor */
+}
+
+.mask-content, .body-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.mask-container {
+  mask-image: url('../../assets/mask.svg');
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  mask-position: center center;
+  background: #ff6347; /* A highlight color */
+  position: absolute;
+  color: #0a0a0a;
+  -webkit-mask-image: url('../../assets/mask.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 40px;
+  -webkit-mask-position: center center;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: auto; /* Enable interactions */
+  user-select: none; /* Prevent text selection */
+  will-change: mask-position, -webkit-mask-position, mask-size, -webkit-mask-size;
+  transition: opacity 0.2s ease;
+}
+
+.mask-container.is-visible {
+  opacity: 1;
+}
+
+.body-container {
+  color: #ffffff;
+  user-select: none; /* Prevent text selection for smoother experience */
+}
+
+.section8-container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.highlight {
+  color: #ff6347;
+}
+
+.section8-container p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* Optionally add a custom cursor if needed */
+.section8-container::after {
+  content: '';
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  display: none; /* Hidden by default, enable if you want a custom cursor */
+}
+
+@media (max-width: 768px) {
+  .section8-container h2 {
+    font-size: 2.5rem;
+  }
+  
+  .mask-container {
+    display: none; /* Hide mask effect on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .section8-container h2 {
+    font-size: 2rem;
+  }
+  
+  .section8-container p {
+    font-size: 1rem;
+  }
+}

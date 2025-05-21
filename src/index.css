@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Cormorant+SC:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color scheme */
+  --color-background: #fdf7f0;
+  --color-primary: #217489;
+  --color-secondary: #249fbc;
+  --color-text: #2c3e50; /* Dark blue-gray for body text */
+  --color-text-light: #5e6d78; /* Lighter variant for secondary text */
+  --color-accent: #e67e22; /* Optional accent color (orange) */
+
+  /* Base font sizes for mobile-s (320px) */
+  --caption: 0.75rem; /* 12px */
+  --body: 1rem; /* 16px */
+  --button: 0.875rem; /* 14px */
+  --heading-xs: 1rem; /* 16px (h6) */
+  --heading-s: 1.125rem; /* 18px (h5) */
+  --heading-m: 1.25rem; /* 20px (h4) */
+  --heading-l: 1.5rem; /* 24px (h3) */
+  --heading-xl: 1.75rem; /* 28px (h2) */
+  --heading-2xl: 2rem; /* 32px (h1) */
+  --display: 8rem; /* 40px */
+
+  /* Line heights */
+  --line-tight: 1.1;
+  --line-normal: 1.5;
+  --line-relaxed: 1.75;
+}
+
+/* Mobile-m (375px) */
+@media screen and (min-width: 375px) {
+  :root {
+    --caption: 0.8125rem; /* 13px */
+    --body: 1rem; /* 16px */
+    --button: 0.9375rem; /* 15px */
+    --heading-xs: 1.0625rem; /* 17px (h6) */
+    --heading-s: 1.1875rem; /* 19px (h5) */
+    --heading-m: 1.3125rem; /* 21px (h4) */
+    --heading-l: 1.625rem; /* 26px (h3) */
+    --heading-xl: 1.875rem; /* 30px (h2) */
+    --heading-2xl: 2.25rem; /* 36px (h1) */
+    --display: 2.75rem; /* 44px */
+  }
+}
+
+/* Mobile-l (425px) */
+@media screen and (min-width: 425px) {
+  :root {
+    --caption: 0.875rem; /* 14px */
+    --body: 1.0625rem; /* 17px */
+    --button: 1rem; /* 16px */
+    --heading-xs: 1.125rem; /* 18px (h6) */
+    --heading-s: 1.25rem; /* 20px (h5) */
+    --heading-m: 1.375rem; /* 22px (h4) */
+    --heading-l: 1.75rem; /* 28px (h3) */
+    --heading-xl: 2rem; /* 32px (h2) */
+    --heading-2xl: 2.5rem; /* 40px (h1) */
+    --display: 3rem; /* 48px */
+  }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 768px) {
+  :root {
+    --caption: 0.9375rem; /* 15px */
+    --body: 1.125rem; /* 18px */
+    --button: 1.0625rem; /* 17px */
+    --heading-xs: 1.25rem; /* 20px (h6) */
+    --heading-s: 1.375rem; /* 22px (h5) */
+    --heading-m: 1.5rem; /* 24px (h4) */
+    --heading-l: 2rem; /* 32px (h3) */
+    --heading-xl: 2.5rem; /* 40px (h2) */
+    --heading-2xl: 3rem; /* 48px (h1) */
+    --display: 4rem; /* 64px */
+  }
+}
+
+/* Laptop (1024px) */
+@media screen and (min-width: 1024px) {
+  :root {
+    --caption: 1rem; /* 16px */
+    --body: 1.1875rem; /* 19px */
+    --button: 1.125rem; /* 18px */
+    --heading-xs: 1.375rem; /* 22px (h6) */
+    --heading-s: 1.5rem; /* 24px (h5) */
+    --heading-m: 1.75rem; /* 28px (h4) */
+    --heading-l: 2.25rem; /* 36px (h3) */
+    --heading-xl: 3rem; /* 48px (h2) */
+    --heading-2xl: 3.5rem; /* 56px (h1) */
+    --display: 5rem; /* 80px */
+  }
+}
+
+/* Laptop-l (1440px) */
+@media screen and (min-width: 1440px) {
+  :root {
+    --caption: 1.0625rem; /* 17px */
+    --body: 1.25rem; /* 20px */
+    --button: 1.1875rem; /* 19px */
+    --heading-xs: 1.5rem; /* 24px (h6) */
+    --heading-s: 1.75rem; /* 28px (h5) */
+    --heading-m: 2rem; /* 32px (h4) */
+    --heading-l: 2.5rem; /* 40px (h3) */
+    --heading-xl: 3.5rem; /* 56px (h2) */
+    --heading-2xl: 4rem; /* 64px (h1) */
+    --display: 6rem; /* 96px */
+  }
+}
+
